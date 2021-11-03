@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st JavaScrit</title>
+</head>
+<body>
+    <h1>JavaScrit</h1>
+    <br>
+    <label for="fname">Name</label>
+    <input type="text" name="fname" id="firstName" placeholder="Enter your name here">
+    <br><br>
+    <input type="button" value="Display name" onclick="replaceText()">
+
+    <p id="ourText">Here will be displayed your name</p>
+
+
+
+<script>
+    function replaceText(){
+    var myName = document.getElementById('firstName').value;
+    
+    document.getElementById('ourText').innerHTML = "You entered a name: " + myName + "  Nice to meet you!";
+    
+    }
+</script>
+
+</body>
+</html>
